@@ -1,0 +1,94 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: pingfang;
+}
+img{
+	border: 0;
+}
+body{
+	background: #E0E0E0;
+    background-image:url(img/bj.jpg);
+	background-size:100%;
+	overflow: hidden;
+
+}
+.box{
+	width: 500px;
+	height: 500px;
+	border-left: 3px solid #73C5FF;
+	border-top: 3px solid #73C5FF;
+	border-right: 2px solid #73C5FF;
+	border-bottom: 2px solid #73C5FF;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right:0;
+	bottom: 0;
+	margin: auto;
+}
+.box .block{
+	width: 24px;
+	height: 24px;
+	float: left;
+	border-bottom: 1px solid #73C5FF;
+	border-right: 1px solid #73C5FF;
+}
+.box .snake{
+	background-image:url(img/snake.jpg);
+	background-size: cover;
+}
+.box .food{
+	background-image:url(img/food.jpg);
+	background-size: cover;
+}
+.tishi{
+	width: 200px;
+	height:100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 36px;
+	border-radius: 20px;
+	background-color: red;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin: auto;
+	z-index: 100;
+	transition: transform 0.6s ease;
+	transform: translateY(-1000px);
+}
+.tishi.show{
+	transform: translateY(0);
+}
+.zailai,.kaishi,.zanting{
+	width: 120px;
+	height:50px;
+	background: rgba(36,41,41,0.5);
+	font-size: 24px;
+	color:#fff;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	z-index: 1000;
+	position: fixed;
+	right: 18%;
+}
+.zailai{
+	top:50%;
+}
+.kaishi{
+	top:60%;
+}
+.zanting{
+	top:70%;
+}
+.kaishi:hover,.zanting:hover,.zailai:hover{
+	background: rgba(229,23,124,0.5);
+}
+
